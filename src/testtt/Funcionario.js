@@ -18,7 +18,7 @@ export default class Funcionario {
         data_de_nascimento="",
         telefone_celular="",
         email="",
-        is_editable=false,
+        is_editable=true,
         sexo=0,
         lotacao=0,
         cargo:0,
