@@ -41,6 +41,7 @@ export default class Home extends Component {
             const teste = response.data;
             this.setState({ funcionarios: teste })
             this.setState({ data: teste })
+            console.log(funcionarios)
 
         } catch (erro) {
             console.log("Erro nos funcionarios")
@@ -159,6 +160,7 @@ export default class Home extends Component {
     }
 
     renderItem = ({ item }) => (
+        
 
         <View style={styles.productContainer}>
             <Text style={styles.contentTitle}>{item.nome}</Text>
@@ -324,7 +326,7 @@ export default class Home extends Component {
 
 var sex = ["Masculino", "Feminino"];
 var btnName = ["Habilitar filtro", "Desabilitar filtro"];
-var dictFilter = { 'lotacao': ["Recursos Humanos"], 'cargo': ["Desenvolvedor"], 'sex': ["Masculino"] };
+var dictFilter = { 'lotacao': ["Tecnologia da Informação"], 'cargo': ["Desenvolvedor"], 'sex': ["Masculino"] };
 
 const styles = StyleSheet.create({
     container: {
