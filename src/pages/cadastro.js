@@ -101,10 +101,10 @@ export default class Main extends Component {
     };
 
     showAlert(responseText) {
-        if (responseText == "200") {
+        if (responseText == "201") {
             Alert.alert(
                 'Sucesso',
-                "Usuário alterado com sucesso!",
+                "Usuário criado com sucesso!",
                 [
                     { text: 'OK', onPress: () => console.log('OK Pressed') },
                 ],
